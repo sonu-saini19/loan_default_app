@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import sys
+st.write(sys.version)
 st.set_page_config(
     page_title="Loan Default Predictor",
     page_icon="💰",
@@ -128,3 +129,4 @@ if st.button("Predict Loan Default"):
 # ===============================
 # st.write("Expected features:", model.feature_names_in_)
 # st.write("Input features:", input_df.columns.tolist())
+
